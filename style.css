@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #abafbf, #d5d5db);
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(47, 40, 40);
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+
+.inputNumber {
+    display: flex;
+    padding: 10px;
+    gap: 7px;
+}
+
+#inputNum {
+    padding: 10px;
+    font-size: 15px;
+    border: 0.2px solid black;
+    border-radius: 10px;
+}
+
+#btnCheck {
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 0.2px solid black;
+    color: white;
+    background: #4a90e2;
+    cursor: pointer;
+}
+
+#btnCheck:hover {
+    background: #357abd;
+}
+
+#btnReset {
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 0.2px solid black;
+    background: rgb(0, 255, 30);
+    color: white;
+    cursor: pointer;
+}
+
+#btnReset:hover {
+    background: green;
+}
+
+.result {
+    margin-top: 15px;
+    font-size: 20px;
+    color: rgb(28, 28, 65);
+}
+
+.game-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-top: 45px;
+    text-align: center;
+}
+
+@keyframes win {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.win {
+    animation: win 0.5s ease-in-out;
+}
